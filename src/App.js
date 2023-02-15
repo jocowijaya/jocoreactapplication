@@ -8,7 +8,7 @@ function App()
   const showEmployees = true; // do the check fundction to display info
   const [role, setRole] = useState('Casual'); // set the useState & parse the value 
   return (
-    <div className="App bg-amber-400">
+    <div className="App">
           {showEmployees ? 
           ( 
             <>
@@ -22,10 +22,16 @@ function App()
                     }
                   }
                 />
-
-                <Employee name='Joco' role='Intern' />
-                <Employee name='Dion'  />
-                <Employee name='Abby'  role={role}/> 
+                <div className='flex flex-wrap justify-center'>
+                    <Employee name='Joco' role='Intern' img="https://images.pexels.com/photos/7562313/pexels-photo-7562313.jpeg" />
+                    <Employee name='Dion' img="https://images.pexels.com/photos/7402883/pexels-photo-7402883.jpeg" />
+                    <Employee name='Abby'  role={role} img="https://images.pexels.com/photos/7897404/pexels-photo-7897404.jpeg"/> 
+                    <Employee name='Steve' role='Intern' img="https://images.pexels.com/photos/2709388/pexels-photo-2709388.jpeg" />
+                    <Employee name='Ella'  img="https://images.pexels.com/photos/1858175/pexels-photo-1858175.jpeg"/>
+                    <Employee name='Febe'  role={role} img="https://images.pexels.com/photos/4350178/pexels-photo-4350178.jpeg"/> 
+                    <Employee name='Ikasu' role='Intern' img="https://images.pexels.com/photos/7897404/pexels-photo-7897404.jpeg"/>
+                </div>
+                
             </>
           ) :
 
