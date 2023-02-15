@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 p.role {
     background-color: blue;
 }
@@ -5,3 +9,4 @@ p.role {
 p.norole{
     background-color: darkred;
 }
+

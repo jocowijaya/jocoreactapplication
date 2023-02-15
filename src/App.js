@@ -1,5 +1,5 @@
-import './App.css';
-import Employee from './component/Employee';
+import './Index.css'; // import app.css
+import Employee from './component/Employee'; //import our component file form component folder - employee.js
 import { useState } from 'react';
 
 function App() 
@@ -8,7 +8,7 @@ function App()
   const showEmployees = true; // do the check fundction to display info
   const [role, setRole] = useState('Casual'); // set the useState & parse the value 
   return (
-    <div className="App">
+    <div className="App bg-amber-400">
           {showEmployees ? 
           ( 
             <>
@@ -24,8 +24,8 @@ function App()
                 />
 
                 <Employee name='Joco' role='Intern' />
-                <Employee name='Dion' role='FT Staff' />
-                <Employee name='Abby'  role={role}/>
+                <Employee name='Dion'  />
+                <Employee name='Abby'  role={role}/> 
             </>
           ) :
 
