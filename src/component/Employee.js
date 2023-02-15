@@ -8,7 +8,7 @@ function Employee(props)
                     (<p class="role"> {props.role}</p>) 
                     :
                     (<p class="norole"> NO ROLE</p>)
-                }
+                } 
             </>
             
         );
